@@ -6,11 +6,11 @@ import {auth, signIn, signOut} from '@/auth'
 const NavBar = async () => {
     const session = await auth()
     return (
-        <header className="px-5 py-3 bg-white shadow-dm font-work-sans">
+        <header className="px-2 bg-white shadow-dm font-work-sans">
             <nav className="flex items-center justify-between">
             <Link href="/">
                 <Image src="/logo.png" alt="logo"
-                width={50} height={50} />
+                width={100} height={100} />
             </Link>
             <div className="flex items-center gap-5 text-black">
                 {(session && session?.user) ? (
